@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.8.27">
 
   <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Raphael Teixeira">
-  <title>Controle DFIG</title>
+  <title>Controle DFIG – Variáveis Trifásicas e Referenciais</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -127,8 +127,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Controle DFIG</h1>
-  <p class="subtitle">Modelo ARX adaptativo por RST</p>
+  <h1 class="title">Variáveis Trifásicas e Referenciais</h1>
+  <p class="subtitle">Identificação e Controle DFIG</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -142,11 +142,30 @@ Prof.&nbsp;Dr.&nbsp;Raphael Teixeira
 </div>
 
 </section>
-<section id="inversor-de-tensão-trifásico-com-vsc" class="slide level2">
-<h2>Inversor de Tensão Trifásico com VSC</h2>
+<section id="espaço-vetorial-trifásico" class="slide level2">
+<h2>Espaço vetorial trifásico</h2>
+<p>Tensões (correntes, fluxos) trifásicas em espaço vetorial:</p>
+<p><span class="math display">\[v_{abc} = \frac{2}{3}\begin{bmatrix} v_a, av_b, a^2v_c \end{bmatrix}\]</span></p>
+<p>onde <span class="math inline">\(a = e^{j2\pi/3}\)</span> é o operador de fase e <span class="math inline">\(i = \sqrt{-1}\)</span>.</p>
+<p>Por Euler, temos que:</p>
+<p><span class="math display">\[a = \cos(120^\circ) + j\sin(120^\circ)\]</span> <span class="math display">\[a^2 = \cos(240^\circ) + j\sin(240^\circ)\]</span></p>
 </section>
-<section id="transformacoes-de-referencial" class="slide level2">
-<h2>Transformacoes de Referencial</h2>
+<section id="referencial-estacionário-alphabeta" class="slide level2">
+<h2>Referencial estacionário <span class="math inline">\(\alpha\beta\)</span>:</h2>
+<p>Projetando o vetor <span class="math inline">\(v_{abc}\)</span> no referencial estacionário com eitos <span class="math inline">\(\alpha\)</span> (real) e <span class="math inline">\(\beta\)</span> (imaginário), têm-se:</p>
+<p><span class="math display">\[v_{\alpha\beta} = [T_{abc}]v_{abc}\]</span></p>
+<p>Com a matriz de transformação <span class="math inline">\(T_{abc}\)</span> de Clarke:</p>
+<p><span class="math display">\[v_{\alpha\beta} = \frac{2}{3}\begin{bmatrix} 1 &amp; -\frac{1}{2} &amp; -\frac{1}{2} \\ 0 &amp; \frac{\sqrt{3}}{2} &amp; -\frac{\sqrt{3}}{2} \end{bmatrix}\begin{bmatrix} v_a \\ v_b \\ v_c \end{bmatrix}\]</span></p>
+</section>
+<section id="referencial-estacionário-alphabeta-1" class="slide level2">
+<h2>Referencial estacionário <span class="math inline">\(\alpha\beta\)</span></h2>
+<p>Invertendo a transformação:</p>
+<p><span class="math display">\[v_{abc} = [T_{abc}]^{-1}v_{\alpha\beta}\]</span></p>
+<p>Com a matriz inversa:</p>
+<p><span class="math display">\[v_{abc} = \begin{bmatrix} 1 &amp; 0 \\ -\frac{1}{2} &amp; \frac{\sqrt{3}}{2} \\ -\frac{1}{2} &amp; -\frac{\sqrt{3}}{2} \end{bmatrix}\begin{bmatrix} v_\alpha \\ v_\beta \end{bmatrix}\]</span></p>
+</section>
+<section class="slide level2">
+
 
 
 </section>
