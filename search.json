@@ -1,30 +1,23 @@
 [
   {
-    "objectID": "Presents/01VariaveisTrifasicasReferenciais.html#espaço-vetorial-trifásico",
-    "href": "Presents/01VariaveisTrifasicasReferenciais.html#espaço-vetorial-trifásico",
-    "title": "Variáveis Trifásicas e Referenciais",
-    "section": "Espaço vetorial trifásico",
-    "text": "Espaço vetorial trifásico\nTensões (correntes, fluxos) trifásicas em espaço vetorial:\n\\[v_{abc} = \\frac{2}{3}\\begin{bmatrix} v_a, av_b, a^2v_c \\end{bmatrix}\\]\nonde \\(a = e^{j2\\pi/3}\\) é o operador de fase e \\(i = \\sqrt{-1}\\).\nPor Euler, temos que:\n\\[a = \\cos(120^\\circ) + j\\sin(120^\\circ)\\] \\[a^2 = \\cos(240^\\circ) + j\\sin(240^\\circ)\\]"
+    "objectID": "Presents/VSC01.html#inversor-de-tensão-trifásico-com-vsc",
+    "href": "Presents/VSC01.html#inversor-de-tensão-trifásico-com-vsc",
+    "title": "Controle DFIG",
+    "section": "Inversor de Tensão Trifásico com VSC",
+    "text": "Inversor de Tensão Trifásico com VSC"
   },
   {
-    "objectID": "Presents/01VariaveisTrifasicasReferenciais.html#referencial-estacionário-alphabeta",
-    "href": "Presents/01VariaveisTrifasicasReferenciais.html#referencial-estacionário-alphabeta",
-    "title": "Variáveis Trifásicas e Referenciais",
-    "section": "Referencial estacionário \\(\\alpha\\beta\\):",
-    "text": "Referencial estacionário \\(\\alpha\\beta\\):\nProjetando o vetor \\(v_{abc}\\) no referencial estacionário com eitos \\(\\alpha\\) (real) e \\(\\beta\\) (imaginário), têm-se:\n\\[v_{\\alpha\\beta} = [T_{abc}]v_{abc}\\]\nCom a matriz de transformação \\(T_{abc}\\) de Clarke:\n\\[v_{\\alpha\\beta} = \\frac{2}{3}\\begin{bmatrix} 1 & -\\frac{1}{2} & -\\frac{1}{2} \\\\ 0 & \\frac{\\sqrt{3}}{2} & -\\frac{\\sqrt{3}}{2} \\end{bmatrix}\\begin{bmatrix} v_a \\\\ v_b \\\\ v_c \\end{bmatrix}\\]"
-  },
-  {
-    "objectID": "Presents/01VariaveisTrifasicasReferenciais.html#referencial-estacionário-alphabeta-1",
-    "href": "Presents/01VariaveisTrifasicasReferenciais.html#referencial-estacionário-alphabeta-1",
-    "title": "Variáveis Trifásicas e Referenciais",
-    "section": "Referencial estacionário \\(\\alpha\\beta\\)",
-    "text": "Referencial estacionário \\(\\alpha\\beta\\)\nInvertendo a transformação:\n\\[v_{abc} = [T_{abc}]^{-1}v_{\\alpha\\beta}\\]\nCom a matriz inversa:\n\\[v_{abc} = \\begin{bmatrix} 1 & 0 \\\\ -\\frac{1}{2} & \\frac{\\sqrt{3}}{2} \\\\ -\\frac{1}{2} & -\\frac{\\sqrt{3}}{2} \\end{bmatrix}\\begin{bmatrix} v_\\alpha \\\\ v_\\beta \\end{bmatrix}\\]"
+    "objectID": "Presents/VSC01.html#transformacoes-de-referencial",
+    "href": "Presents/VSC01.html#transformacoes-de-referencial",
+    "title": "Controle DFIG",
+    "section": "Transformacoes de Referencial",
+    "text": "Transformacoes de Referencial"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Controle e Identificação de Sistemas",
     "section": "",
-    "text": "Controle VSC:\n\nVariáveis trifásicas e referenciais"
+    "text": "Controle VSC:\n\nIdentificação e Controle VSC 0"
   }
 ]
