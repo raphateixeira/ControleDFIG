@@ -1,6 +1,6 @@
 ---
-title: "Variáveis Trifásicas e Referenciais"
-subtitle: "Identificação e Controle DFIG"
+title: "Controle MPC-FCS de gerador DFIG"
+subtitle: "Estratégia adaptativa de modelo ARX preditivo por RST"
 institute: "Universidade Federal do Pará"
 author: "Prof. Dr. Raphael Teixeira"
 date: ""
@@ -12,7 +12,7 @@ format:
     transition: fade
 ---
 
-## Espaço vetorial trifásico
+## Gerador de Indução de Dupla Alimentação (DFIG)
 
 Tensões (correntes, fluxos) trifásicas  em espaço vetorial:
 
